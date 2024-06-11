@@ -1,0 +1,14 @@
+<div>
+  <h3>Resultados de búsqueda para "{{ query }}":</h3>
+  <div *ngIf="results.length > 0">
+    <ul>
+      <li *ngFor="let result of results">
+        <a [href]="result.url" target="_blank">{{ result.name }}</a>
+        <p>{{ result.snippet }}</p>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="results.length === 0">
+    <p>No se encontraron resultados.</p>
+  </div>
+</div>

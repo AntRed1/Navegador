@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos adicionales */
+.alert {
+  font-size: 1rem;
+  /* Tamaño de fuente ajustado */
+  margin-top: 20px;
+  /* Margen superior aumentado */
+}
+
+/* .link-opacity-25-hover:hover {
+  opacity: 0.5;
+} */

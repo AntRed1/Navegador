@@ -1,0 +1,25 @@
+<div class="container mb-3 mt-5 alert">
+  <form
+    class="form-inline d-flex justify-content-center align-items-center"
+    (ngSubmit)="buscar()"
+  >
+    <div class="input-group">
+      <input
+        class="form-control"
+        type="search"
+        placeholder="Buscar en la web..."
+        aria-label="Search"
+        [(ngModel)]="consulta"
+        name="consulta"
+      />
+      <button class="btn btn-outline-primary" type="submit">Buscar</button>
+    </div>
+  </form>
+</div>
+
+<div *ngIf="weatherData">
+  <h3>Clima en {{ weatherData.name }}</h3>
+  <p>Temperatura: {{ weatherData.main.temp }} °C</p>
+  <p>Humedad: {{ weatherData.main.humidity }} %</p>
+  <p>Descripción: {{ weatherData.weather[0].description }}</p>
+</div>

@@ -1,0 +1,82 @@
+<header>
+  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a
+        class="navbar-brand btn btn-primary btn-lg btn-block"
+        href="#"
+        (click)="volverInicio()"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-house"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"
+          />
+        </svg>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Reemplaza el campo de búsqueda con el estado del clima -->
+      <a
+        class="currentTemp fc-inkwell d-ib fz-xs h-32 mt-4"
+        href="https://espanol.search.yahoo.com/search;_ylt=AwrEub1oE2dm0UQz2soCEQx.;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA2hlYWRlcg--?ei=UTF-8&amp;p=Tiempo+Santo+Domingo&amp;fr=sfp&amp;fr2=p%3As%2Cv%3Asfp%2Cm%3Aheader"
+      >
+        <div class="thmb fl-l">
+          <noscript>
+            <img
+              class="s-img va-top"
+              src="https://s.yimg.com/pv/static/img/28_mostly_cloudy_day-202211231919.svg"
+              width="32"
+              height="32"
+            />
+          </noscript>
+          <div class="d-ib ml-8 mt-2 lh-28 fz-24">
+            <object
+              class="s-img va-top"
+              width="32"
+              height="32"
+              src="https://s.yimg.com/pv/static/img/28_mostly_cloudy_day-202211231919.svg"
+              onload="YAHOO.LL.i(this);"
+              data="https://s.yimg.com/pv/static/img/28_mostly_cloudy_day-202211231919.svg"
+            ></object>
+          </div>
+        </div>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+
+<footer
+  id="pie-pagina"
+  class="bg-dark border-bottom border-body text-white mt-5 py-3"
+  data-bs-theme="dark"
+>
+  <div class="container-fluid text-center">
+    <p class="lead m-0">
+      <strong>Copyright &copy; Anthony J. Rojas Valdez </strong>
+      <a href="https://github.com/AntRed1"
+        ><i class="fa fa-github fs-3" aria-hidden="true"></i
+      ></a>
+    </p>
+  </div>
+</footer>
